@@ -1,23 +1,23 @@
-package com.example.demo.dto;
-
+package com.example.demo.payload.response;
 
 import lombok.*;
 
 import java.util.Date;
 
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @ToString
-public class BookDTO {
+public class BookResponse {
     private long id;
     private String title;
     private String author;
-    private String typeBook;
     private String description;
+    private String typeBook;
     private Date dateRelease;
     private int totalPage;
     private float price;
+    private float rating;
 }

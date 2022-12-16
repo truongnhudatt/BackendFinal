@@ -5,7 +5,7 @@ server:
 spring:
   datasource:
     password: 26102001
-    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/final
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/final?sessionVariables=sql_mode='NO_ENGINE_SUBSTITUTION'&jdbcCompliantTruncation=false
     username: root
   jpa:
     show-sql: true
